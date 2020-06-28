@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ControladorIndex</servlet-name>
+        <servlet-class>Controlador.ControladorIndex</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContMant</servlet-name>
+        <servlet-class>Controlador.ContMant</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorPrincipal</servlet-name>
+        <servlet-class>Controlador.ControladorPrincipal</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AlumnoControlador</servlet-name>
+        <servlet-class>Controlador.AlumnoControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControladorIndex</servlet-name>
+        <url-pattern>/ControladorIndex</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContMant</servlet-name>
+        <url-pattern>/ContMant</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorPrincipal</servlet-name>
+        <url-pattern>/ControladorPrincipal</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlumnoControlador</servlet-name>
+        <url-pattern>/AlumnoControlador</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
